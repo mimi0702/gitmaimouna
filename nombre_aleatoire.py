@@ -1,7 +1,14 @@
 
-x =9
-n =int(input("entrer une valeur:"))
-if n< x:
-	print("oui bravo" ,n)
-else:
-	print("non opps")
+import random
+
+x = random.randint(0, 9)
+chiffre_secret = random.randint(0, 9)
+reponse  = 0
+while reponse != chiffre_secret:
+	reponse =int(input("entrer une valeur entre 0 et 9"))
+	if reponse > chiffre_secret:
+		print("le chiffre secret est plus petit que ca")
+	elif reponse < chiffre_secret:
+		print("le chiffre secret est plus grand que ca")
+	else:
+		print("vous avez gagne")
