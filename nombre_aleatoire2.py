@@ -2,7 +2,6 @@ import random
 import sys
 
 chiffre_secret = random.randint(0, 9)
-print(chiffre_secret)
 reponse  =  None
 for i in  range(3):
 
